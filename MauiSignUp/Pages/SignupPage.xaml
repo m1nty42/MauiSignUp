@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiSignUp.Pages.SignupPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Sign Up">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+
+            <Label Text="Create Account" FontSize="24" FontAttributes="Bold" />
+
+            <Entry x:Name="UsernameEntry" Placeholder="Username" />
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" />
+
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" />
+
+            <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" />
+
+            <Button Text="Sign Up" Clicked="OnSignUpClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
